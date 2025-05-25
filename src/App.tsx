@@ -5,6 +5,7 @@ import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
 import FAQ from './Components/FAQ'
+import Footer from "./Components/Footer";
 function App() {
   return (
     <section className="relative min-h-screen bg-[#05060f] text-white overflow-hidden">
@@ -21,7 +22,8 @@ function App() {
       <FAQ/>
       <SlidingHr/>
       {/* Footer*/}
-
+      <Footer/>
+      <SlidingHr/>
 
       {/* Don't alter the below tags*/}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.5)_100%)] pointer-events-none" />
