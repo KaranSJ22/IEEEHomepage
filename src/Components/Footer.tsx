@@ -1,5 +1,3 @@
-import ieeeLogo from '../assets/logo.png'; // Update the path accordingly
-
 function Footer() {
   return (
     <>
