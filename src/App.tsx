@@ -7,6 +7,7 @@ import SlidingHr from "./Components/SlindingHr";
 import Footer from "./Components/Footer";
 import FAQ from './Components/FAQ'
 import Coordinators from "./Components/Coordinators";
+import NewsSection from "./Components/NewsSection";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       {/* Faculty Component*/}
       <Coordinators/>
       <SlidingHr/>
-      {/* NewsLetter Component */}      
+      <NewsSection/>      
       <SlidingHr/>
       {/* FAQS component*/}
       <FAQ/>
