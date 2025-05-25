@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
+import FAQ from './Components/FAQ'
 import Footer from "./Components/Footer";
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* NewsLetter Component */}      
       <SlidingHr/>
       {/* FAQS component*/}
+      <FAQ/>
       <SlidingHr/>
       {/* Footer*/}
       <Footer/>
