@@ -1,0 +1,124 @@
+/* Animations */
+@keyframes noiseShift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, -10px); }
+  50% { transform: translate(-5px, 15px); }
+  75% { transform: translate(15px, 5px); }
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.1); }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, 30px) scale(0.9); }
+}
+
+@keyframes patternRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes titleSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes descriptionFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 120px;
+    opacity: 1;
+  }
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+@keyframes gridFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Pseudo-element for section label underline */
+.section-label::after {
+  content: '';
+  position: relative;
+  left: 0;
+  bottom: -4px;
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
+}
+
+/* Gradient orbs & noise texture - apply via class */
+.noise-texture {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 40px 40px, 60px 60px;
+  animation: noiseShift 25s linear infinite;
+}
+
+.gradient-orb-1 {
+  background: radial-gradient(circle, #1a1a2e 0%, transparent 70%);
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: orbFloat1 20s ease-in-out infinite;
+}
+
+.gradient-orb-2 {
+  background: radial-gradient(circle, #16213e 0%, transparent 70%);
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: orbFloat2 25s ease-in-out infinite;
+}
+
+.geometric-pattern {
+  background: 
+    linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.003) 40.5%, rgba(255, 255, 255, 0.003) 41%, transparent 41.5%),
+    linear-gradient(-45deg, transparent 40%, rgba(255, 255, 255, 0.003) 40.5%, rgba(255, 255, 255, 0.003) 41%, transparent 41.5%);
+  background-size: 80px 80px;
+  animation: patternRotate 40s linear infinite;
+}
