@@ -4,8 +4,6 @@ import Hero from "./Components/Hero";
 import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
-import NewsSectiont from "./Components/NewsSectiont";
-
 function App() {
   return (
     <section className="relative min-h-screen bg-[#05060f] text-white overflow-hidden">
@@ -17,8 +15,6 @@ function App() {
       {/* Faculty Component*/}
       <SlidingHr/>
       {/* NewsLetter Component */}      
-      <SlidingHr/>
-      <NewsSectiont/>
       <SlidingHr/>
       {/* FAQS component*/}
       <SlidingHr/>
