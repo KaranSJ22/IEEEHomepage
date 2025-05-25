@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <section className="relative min-h-screen bg-[#05060f] text-white overflow-hidden">
@@ -18,7 +19,7 @@ function App() {
       <SlidingHr/>
       {/* FAQS component*/}
       <SlidingHr/>
-      {/* Footer*/}
+      <Footer/>
 
 
       {/* Don't alter the below tags*/}
