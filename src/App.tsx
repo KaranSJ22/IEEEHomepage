@@ -5,6 +5,9 @@ import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
 import Footer from "./Components/Footer";
+import FAQ from './Components/FAQ'
+import Coordinators from "./Components/Coordinators";
+
 function App() {
   return (
     <section className="relative min-h-screen bg-[#05060f] text-white overflow-hidden">
@@ -14,12 +17,19 @@ function App() {
       <Events />
       <SlidingHr/>
       {/* Faculty Component*/}
+      <Coordinators/>
       <SlidingHr/>
       {/* NewsLetter Component */}      
       <SlidingHr/>
       {/* FAQS component*/}
+      <FAQ/>
       <SlidingHr/>
+      {/* Footer*/}
       <Footer/>
+
+
+     
+      
 
 
       {/* Don't alter the below tags*/}
