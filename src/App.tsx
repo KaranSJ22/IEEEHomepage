@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Events from "./Components/Events";
 import Navbar from "./Components/Navbar";
 import SlidingHr from "./Components/SlindingHr";
+import FAQ from './Components/FAQ'
 function App() {
   return (
     <section className="relative min-h-screen bg-[#05060f] text-white overflow-hidden">
@@ -17,6 +18,7 @@ function App() {
       {/* NewsLetter Component */}      
       <SlidingHr/>
       {/* FAQS component*/}
+      <FAQ/>
       <SlidingHr/>
       {/* Footer*/}
 
