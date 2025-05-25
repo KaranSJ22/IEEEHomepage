@@ -23,7 +23,7 @@ function App() {
       <FAQ/>
       <SlidingHr/>
       {/* Footer*/}
-      <Footer/>
+      
 
       {/* Don't alter the below tags*/}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.5)_100%)] pointer-events-none" />
