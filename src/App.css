@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -15,7 +15,7 @@
 
 .responsive-svg text {
   font-size: 10rem; 
-  fill: rgba(44, 134, 224, 0);
+  fill: rgba(78, 157, 236, 0.863);
   stroke-width: 2;
   stroke: #3798A0;
   animation: stroke 5s infinite alternate;
@@ -60,7 +60,7 @@
     stroke-width: 3;
   }
   100% {
-    fill: rgb(22, 129, 236);
+    fill: rgb(54, 147, 239);
     stroke: rgba(181, 198, 199, 0);
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;

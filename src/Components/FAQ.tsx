@@ -7,7 +7,7 @@ function FAQ() {
     {
       question: "What is IEEE RIT?",
       answer:
-        "IEEE RIT is the student branch of IEEE at Gokaraju Rangaraju Institute of Engineering and Technology, dedicated to advancing technology and professional development.",
+        "IEEE RIT is the student branch of IEEE at Ramaiah Institute of Technology, dedicated to advancing technology and professional development.",
     },
     {
       question: "How can I join IEEE RIT?",
