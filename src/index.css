@@ -68,15 +68,76 @@ code {
 }
 
 /* Marquee Animation */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-280px * 4 - 2rem * 4));
-  }
+.animate-marquee {
+  display: flex;
+  animation: marquee 10s linear infinite;
+  will-change: transform;
 }
 
-.animate-marquee {
-  animation: marquee 30s linear infinite;
+/* Coordinator Card Styles */
+.coordinator-card {
+  background-color: var(--surface);
+  color: var(--text);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coordinator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.coordinator-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--primary);
+}
+
+.coordinator-card .content {
+  padding: 16px;
+}
+
+.coordinator-card .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--primary);
+}
+
+.coordinator-card .description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+}
+
+.coordinator-card .cta {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.coordinator-card .cta a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.coordinator-card .cta a:hover {
+  color: var(--primary);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
