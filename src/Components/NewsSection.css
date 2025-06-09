@@ -188,6 +188,17 @@
   transition: opacity 0.6s ease;
   border-radius: 12px;
 }
+.card-gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 1; /* above .card-background, below content */
+  background: linear-gradient(135deg, rgba(255,200,55,0.09) 0%, rgba(40,80,255,0.07) 100%);
+  /* Adjust colors and opacity for your theme */
+  mix-blend-mode: lighten;
+  transition: opacity 0.4s;
+}
 
 .card-border-effect {
   position: absolute;
